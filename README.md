@@ -63,7 +63,7 @@ const avatar = require("../images/image-avatar.png");
 
 ### Continued development
 I hope to work on bigger, more complex projects, so I can get better.
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
 
 ### Useful resources
 
@@ -73,7 +73,7 @@ I hope to work on bigger, more complex projects, so I can get better.
 
 ## Author
 
-- Frontend Mentor - [@yAyodelearog](https://www.frontendmentor.io/profile/Ayodelearog)
+- Frontend Mentor - [@Ayodelearog](https://www.frontendmentor.io/profile/Ayodelearog)
 - Twitter - [@RationalMan_](https://www.twitter.com/RationalMan_)
 
 
