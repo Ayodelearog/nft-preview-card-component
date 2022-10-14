@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# Frontend Mentor - NFT preview card component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
+This was a fun mini project for me for because I got to practice my CSS, and it's beautiful UI :)
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./Screenshots/Screenshot%202022-10-14%20at%2023-16-16%20React%20App.png)
+![](./Screenshots/Screenshot%202022-10-14%20at%2023-17-10%20React%20App.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [NFT-interactive-components](https://nft-interactive-component.netlify.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## My process
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Sass](https://sass-lang.com/) - For styles
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### What I learned
+I had a few bugs while working on this, so I learned how to fix the "Sass build module failed" bug. I also learned how to use the "require" function to import image because for some reasons, I was unable to use the normal <img/> tag to import my images, so I had to use "require("imageFilePath")" after importing the image at the top of my file.
+I also worked on image overlay, which was a bit of a challenge because I haven't usd it before. But I think the results are satisfying.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+import "../images/image-avatar.png";
+
+const avatar = require("../images/image-avatar.png");
+```
+
+
+### Continued development
+I hope to work on bigger, more complex projects, so I can get better.
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
+### Useful resources
+
+- [W3Schools](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This helped me get over the image overlay hurdle.
+
+
+
+## Author
+
+- Frontend Mentor - [@yAyodelearog](https://www.frontendmentor.io/profile/Ayodelearog)
+- Twitter - [@RationalMan_](https://www.twitter.com/RationalMan_)
+
+
+

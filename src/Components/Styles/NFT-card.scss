@@ -1,0 +1,410 @@
+@import "./Variables/variables.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    .card-container {
+        max-width: 375px;
+        height: 100vh;
+        background-color: $mainBG;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        .nft-card {
+            background-color: $cardBG;
+            border-radius: 15px;
+            box-shadow: 4px 35px 35px, -4px 35px 35px;
+            border-radius: 18px;
+            width: 88%;
+            height: 75%;
+            margin: auto;
+
+            .nft-card-content-wrapper {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                max-width: 86%;
+                height: 100%;
+                align-items: center;
+                margin: auto;
+                padding: 25px 0;
+
+                .nft-image {
+                    min-width: 100%;
+                    height: 52%;
+                    border-radius: 8px;
+                    margin-bottom: 25px;
+
+                    
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                    }
+                    
+                    .overlay {
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        max-height: 46.8%;
+                        min-width: 100%;
+                        border-radius: 8px;
+                        opacity: 0;
+                        display: flex;
+
+                        svg {
+                            margin: auto;
+                        }
+                    }
+                }
+
+                .nft-image:hover .overlay {
+                    opacity: 100%;
+                    background-color: $overlayBG;
+                    transition: ease-in-out .4s;
+                    cursor: pointer;
+                }
+
+                
+
+
+                .nft-text {
+                    width: 100%;
+                    text-align: left;
+                    font-family: $primaryFont;
+                    margin-bottom: 16px;
+                    font-size: $p-size;
+
+                    h2 {
+                        font-weight: 600;
+                        color: $white;
+                        margin-bottom: 12px;
+                        font-size: 1.5rem;
+                    }
+
+                    h2:hover {
+                        color: $primartColor-cyan;
+                        transition: ease-in-out .6s;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        font-size: $p-size;
+                        font-weight: 300;
+                        color: hsla(0, 100%, 99%, 0.7);
+                    }
+
+                }
+
+                .eth-amount-countdown {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 4px 0;
+                    font-family: $primaryFont;
+                    font-size: $p-size;
+                    margin-bottom: 20px;
+
+                    .eth {
+                        width: 40%;
+                        height: 100%;
+                        color: $white;
+                        display: flex;
+
+                        #eth-icon {
+                            width: 11px;
+                            height: 100%;
+                            margin-right: 6px;
+                            background: url("../../images/icon-ethereum.svg") no-repeat center;
+                            
+                        }
+
+                        #eth-value {
+                            text-align: center;
+                            color: $primartColor-cyan;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .countdown {
+                        width: 40%;
+                        height: 100%;
+                        color: $white;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        
+
+                        #clock-icon {
+                            width: 17px;
+                            height: 100%;
+                            margin-right: 6px;
+                            background: url("../../images/icon-clock.svg") center no-repeat;
+                            background-size: 17px;
+                            
+                        }
+
+                        #days-left {
+                            font-weight: 400;
+                            color: hsla(0, 100%, 99%, 0.7);
+                        }
+                    }
+                }
+
+                .displayPicture-name {
+                    width: 100%;
+                    height: 60px;
+                    border-top: $line 2px solid;
+                    padding: 8px 0 42px 0;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 35px;
+                        width: 35px;
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        margin-right: 16px;
+
+                    }
+                    
+                    p {
+                        color: $white;
+
+                        span {
+                            color: hsla(0, 100%, 99%, 0.7);
+                        }
+
+                        #span-Jules:hover {
+                            color: $primartColor-cyan;
+                            transition: ease-in-out .4s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .attribution {
+            text-align: center;
+            margin-bottom: 14px;
+
+            p {
+                color: hsla(0, 100%, 99%, 0.7);
+            }
+
+            a {
+                color: hsla(0, 100%, 99%, 0.7);
+                text-decoration: underline;
+            }
+
+            a:hover {
+                color: $primartColor-cyan;
+                transition: ease-in-out .4s;
+                font-weight: 400;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+    
+        .card-container {
+            max-width: 1440px;
+            height: 100vh;
+            background-color: $mainBG;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+    
+            .nft-card {
+                background-color: $cardBG;
+                border-radius: 15px;
+                box-shadow: 4px 35px 35px, -4px 35px 35px;
+                border-radius: 18px;
+                width: 24%;
+                height: 75%;
+                margin: auto;
+    
+                .nft-card-content-wrapper {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 84%;
+                    height: 100%;
+                    align-items: center;
+                    margin: auto;
+                    padding: 25px 0;
+    
+                    .nft-image {
+                        min-width: 100%;
+                        height: 52%;
+                        border-radius: 8px;
+                        margin-bottom: 25px;
+    
+                        
+                        img {
+                            max-width: 100%;
+                            height: 100%;
+                            border-radius: 8px;
+                        }
+                        
+                        .overlay {
+                            position: absolute;
+                            top: 25px;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            max-height: 46.8%;
+                            min-width: 100%;
+                            border-radius: 8px;
+                            opacity: 0;
+                            display: flex;
+    
+                            svg {
+                                margin: auto;
+                            }
+                        }
+                    }
+    
+                    .nft-image:hover .overlay {
+                        opacity: 100%;
+                        background-color: $overlayBG;
+                        transition: ease-in-out .6s;
+                        cursor: pointer;
+                    }
+    
+                    .nft-text {
+                        width: 100%;
+                        text-align: left;
+                        font-family: $primaryFont;
+                        margin-bottom: 16px;
+                        font-size: $p-size;
+    
+                        h2 {
+                            font-weight: 600;
+                            color: $white;
+                            margin-bottom: 12px;
+                            font-size: 1.5rem;
+                        }
+    
+                        h2:hover {
+                            color: $primartColor-cyan;
+                            transition: ease-in-out .4s;
+                            cursor: pointer;
+                        }
+    
+                        p {
+                            font-size: $p-size;
+                            font-weight: 300;
+                            color: hsla(0, 100%, 99%, 0.7);
+                        }
+    
+                    }
+    
+                    .eth-amount-countdown {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 4px 0;
+                        font-family: $primaryFont;
+                        font-size: $p-size;
+                        margin-bottom: 20px;
+    
+                        .eth {
+                            width: 40%;
+                            height: 100%;
+                            color: $white;
+                            display: flex;
+    
+                            #eth-icon {
+                                width: 11px;
+                                height: 100%;
+                                margin-right: 6px;
+                                background: url("../../images/icon-ethereum.svg") no-repeat center;
+                                
+                            }
+    
+                            #eth-value {
+                                text-align: center;
+                                color: $primartColor-cyan;
+                                font-weight: 400;
+                            }
+                        }
+    
+                        .countdown {
+                            width: 40%;
+                            height: 100%;
+                            color: $white;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            
+    
+                            #clock-icon {
+                                width: 17px;
+                                height: 100%;
+                                margin-right: 6px;
+                                background: url("../../images/icon-clock.svg") center no-repeat;
+                                background-size: 17px;
+                                
+                            }
+    
+                            #days-left {
+                                font-weight: 400;
+                                color: hsla(0, 100%, 99%, 0.7);
+                            }
+                        }
+                    }
+    
+                    .displayPicture-name {
+                        width: 100%;
+                        height: 60px;
+                        border-top: $line 2px solid;
+                        padding: 8px 0 42px 0;
+                        display: flex;
+                        align-items: center;
+    
+                        img {
+                            height: 35px;
+                            width: 35px;
+                            border: 1px solid $white;
+                            border-radius: 50%;
+                            margin-right: 16px;
+    
+                        }
+                        
+                        p {
+                            color: $white;
+    
+                            span {
+                                color: hsla(0, 100%, 99%, 0.7);
+                            }
+    
+                            #span-Jules:hover {
+                                color: $primartColor-cyan;
+                                transition: ease-in-out .4s;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
