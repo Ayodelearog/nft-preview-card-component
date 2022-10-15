@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: column;
   max-width: 86%;
-  height: 100%;
   align-items: center;
   margin: auto;
   padding: 25px 0;
@@ -47,7 +46,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  max-height: 48%;
+  max-height: 50%;
   min-width: 100%;
   border-radius: 8px;
   opacity: 0;
@@ -64,7 +63,6 @@
 }
 * .card-container .nft-card .nft-card-content-wrapper .nft-text {
   width: 100%;
-  max-height: 89px;
   text-align: left;
   font-family: "Outfit", sans-serif;
   margin-bottom: 16px;
@@ -88,7 +86,6 @@
 }
 * .card-container .nft-card .nft-card-content-wrapper .eth-amount-countdown {
   width: 100%;
-  max-height: 24px;
   display: flex;
   justify-content: space-between;
   padding: 4px 0;
@@ -98,7 +95,6 @@
 }
 * .card-container .nft-card .nft-card-content-wrapper .eth-amount-countdown .eth {
   width: 40%;
-  height: 100%;
   color: hsl(0deg, 0%, 100%);
   display: flex;
 }
@@ -115,7 +111,6 @@
 }
 * .card-container .nft-card .nft-card-content-wrapper .eth-amount-countdown .countdown {
   width: 40%;
-  height: 100%;
   color: hsl(0deg, 0%, 100%);
   display: flex;
   flex-direction: row;
@@ -136,8 +131,7 @@
   width: 100%;
   max-height: 40px;
   border-top: hsl(215deg, 32%, 27%) 2px solid;
-  padding: 20px 0;
-  margin-bottom: 12px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
 }
