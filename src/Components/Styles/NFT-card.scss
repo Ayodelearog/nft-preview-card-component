@@ -86,7 +86,7 @@
 
                     h2:hover {
                         color: $primartColor-cyan;
-                        transition: ease-in-out .6s;
+                        transition: ease-in-out .4s;
                         cursor: pointer;
                     }
 
@@ -170,6 +170,7 @@
                     
                     p {
                         color: $white;
+                        font-family: $primaryFont;
 
                         span {
                             color: hsla(0, 100%, 99%, 0.7);
@@ -192,7 +193,7 @@
             display: flex;
             font-size: 12px;
             justify-content: space-between;
-            padding: 8px 25px;
+            padding: 0 25px;
 
             p {
                 color: hsla(0, 100%, 99%, 0.7);
@@ -281,7 +282,7 @@
                     .nft-image:hover .overlay {
                         opacity: 100%;
                         background-color: $overlayBG;
-                        transition: ease-in-out .6s;
+                        transition: ease-in-out .4s;
                         cursor: pointer;
                     }
     
