@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [NFT-interactive-components](https://nft-interactive-component.netlify.app/)
+- Live Site URL: [NFT-interactive-components](https://nft-preview-component2.netlify.app/)
 
 ## My process
 
